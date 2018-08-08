@@ -45,7 +45,6 @@ void Push(struct SLLstack* s, char value)
 			nAux->value = value;
 			nAux->ancestor = s->top;
 			s->top = nAux;
-			free(nAux);
 		}
 		printf("Element Added!\n");
 		s->size++;
